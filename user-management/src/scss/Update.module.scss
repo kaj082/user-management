@@ -1,0 +1,90 @@
+@use "./variable.scss" as *;
+
+.updateContainer {
+  width: 100%;
+  padding: 12px 48px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+
+  border-radius: 12px;
+
+  .back {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    .backBtn {
+      width: fit-content;
+      color: $gray1;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    .title {
+      color: $gray1;
+      font-size: 1.5rem;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    max-width: 1024px;
+
+    .labelValue {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      width: 100%;
+      row-gap: 8px;
+
+      .label {
+        color: $gray1;
+        font-size: 1rem;
+        font-weight: 500;
+        line-height: normal;
+        text-align: left;
+        flex: 0.3;
+        @media (max-width: 767px) {
+          flex: unset;
+          width: 100%;
+        }
+      }
+      .input {
+        flex: 1;
+        @media (max-width: 767px) {
+          flex: unset;
+          width: 100%;
+        }
+      }
+      @media (max-width: 767px) {
+        flex-direction: column;
+      }
+    }
+
+    .update {
+      width: 190px;
+      margin: 0 auto;
+
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+    .changePassword {
+      margin-top: 32px;
+      width: 190px;
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 12px 24px;
+  }
+}

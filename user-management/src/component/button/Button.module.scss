@@ -1,0 +1,54 @@
+@use "../../scss/variable.scss" as *;
+
+.button {
+  width: 100%;
+  padding: 0 8px;
+  height: 38px;
+  border-radius: 8px;
+  background-color: $theme1;
+  border: 1px solid transparent;
+  .btnText {
+    color: $white;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .loader {
+    width: 20px;
+    height: 20px;
+    border: 2px solid $white;
+    border-bottom-color: transparent;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    animation: rotation 1.2s linear infinite;
+  }
+
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  &:hover {
+    opacity: 0.9;
+    cursor: pointer;
+  }
+
+  &.primary {
+  }
+  &.secondary {
+    border: 1px solid $theme1;
+    background-color: transparent;
+    .btnText {
+      color: $theme1;
+    }
+
+    .loader {
+      border: 2px solid $theme1;
+    }
+  }
+}

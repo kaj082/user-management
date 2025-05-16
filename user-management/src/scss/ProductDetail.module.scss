@@ -1,0 +1,130 @@
+@use "./variable.scss" as *;
+
+.container {
+  width: 100%;
+  height: fit-content;
+  .back {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+
+    .backBtn {
+      width: fit-content;
+      color: $gray1;
+      font-size: 2rem;
+      cursor: pointer;
+    }
+
+    .title {
+      color: $gray1;
+      font-size: 2rem;
+      font-weight: 600;
+      line-height: normal;
+    }
+  }
+
+  .title {
+    color: $gray1;
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: normal;
+  }
+  .description {
+    color: $gray1;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: normal;
+  }
+  .price {
+    color: green;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+  }
+
+  .box {
+    background-color: $gray6;
+
+    .subTitle {
+      color: $gray2;
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: normal;
+      margin-bottom: 6px;
+    }
+  }
+
+  .CustomerReviews {
+    color: $gray1;
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: normal;
+    margin-bottom: 6px;
+  }
+
+  .rating {
+    color: $theme1;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+  }
+  p {
+    color: $gray2;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .label {
+    color: $gray3;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: normal;
+    padding-right: 12px;
+  }
+
+  .review {
+    display: grid;
+
+    background-color: $gray6;
+    border: 1px solid $gray7;
+    border-radius: 8px;
+    padding: 12px;
+
+    .reviewHeader {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .reviewContent {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .reviewer {
+      color: $gray3;
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .rating {
+      color: $theme1;
+      font-size: 1.2rem;
+      font-weight: 600;
+      line-height: normal;
+    }
+    .comment {
+      color: $gray5;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+    }
+    .date {
+      color: $theme1;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
